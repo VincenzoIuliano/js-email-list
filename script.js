@@ -30,7 +30,8 @@ function fetchmails (root, n = 10) {
       root.innerHTML += `<li>${randomMail}</li>` // gli diamo dove inserire l'html senza usare parametri globali
     })
     .catch((err) => {
-      console.log("Abbiamo un errore:", err);
+      console.error(err)
+      alert('Qualcosa è andato storto')
     }); 
 }
 }
